@@ -17,6 +17,8 @@ set(THIS_PACKAGE_INCLUDE_DEPENDS
     std_msgs
     geometry_msgs
     sensor_msgs
+    moveit_studio_agent
+    moveit_studio_agent_msgs
 )
 
 if(CMAKE_CXX_COMPILER_ID MATCHES "(GNU|Clang)")
@@ -29,6 +31,8 @@ find_package(rclcpp_lifecycle REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(moveit_studio_agent REQUIRED)
+find_package(moveit_studio_agent_msgs REQUIRED)
 
 # Build gamepad app.
 
